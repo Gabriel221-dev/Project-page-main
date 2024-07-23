@@ -1,0 +1,114 @@
+.header {
+    background-color: #004953;
+    height: 194px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .header {
+      height: 178px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .header {
+      height: 128px;
+    }
+  }
+  
+  .header__nav {
+    /* display: flex;
+    align-items: center;
+    gap: 8rem; */
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    column-gap: 8rem;
+  
+    @media only screen and (max-width: 768px) {
+      column-gap: 4rem;
+    }
+  
+    @media only screen and (max-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+    }
+  }
+  
+  .header__brand {
+    display: inherit;
+  }
+  
+  .header__logo {
+    width: 160px;
+  
+    @media only screen and (max-width: 768px) {
+      width: 128px;
+    }
+  }
+  
+  .header__navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  
+  .header__link {
+    margin-right: 4rem;
+  }
+
+  .header:last-child {
+    margin-right: 0;
+  }
+  
+  .header__anchor {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .header__anchor--active {
+    color: #f08080;
+}
+
+  .header__btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    justify-self: end;
+  
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  
+  .header__menu {
+    display: none;
+  
+    @media only screen and (max-width: 580px) {
+      display: block;
+      background-color: transparent;
+      width: 100px;
+      padding: .5rem;
+      border: 0;
+      outline: 0;
+      margin-left: auto;
+      /* justify-self: right;
+      align-items:right; */
+    }
+  }
+  

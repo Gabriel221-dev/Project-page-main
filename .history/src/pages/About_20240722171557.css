@@ -1,0 +1,145 @@
+.about {
+    /* padding: 20px; */
+    background-color: #004953;
+  }
+  
+  .about-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #004953;
+    background-image: url(/public/Imagez/bg-pattern-about-1-mobile-nav-1.svg);
+    background-repeat: no-repeat;
+    background-position: right -100px bottom;
+  
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      h1 {
+        order: -1; /* Move the h1 above the p */
+      }
+  
+      p {
+        order: 1;
+      }
+    }
+  
+    @media only screen and (max-width: 480px) {
+      background-position: right -100px bottom -100px;
+    }
+  }
+  
+  .about-company h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding: 4.5rem;
+    color: #f0f0f0;
+    flex: 1;
+  
+    @media only screen and (max-width: 768px) {
+      font-size: 2.5rem; /* Further reduce font size for smaller screens */
+      padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+  
+    @media only screen and (max-width: 480px) {
+      font-size: 2rem; /* Further reduce font size for smaller screens */
+      padding: 1rem; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  .about-company p {
+    font-size: .8rem;
+    color: white;
+    max-width: 700px;
+    margin: 1rem 5rem;
+    padding: 2rem ;
+    flex: 1;
+  
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      font-size: .9rem; 
+      padding:2rem 1rem; 
+      margin: -4rem 1rem 3rem 1rem;
+
+    }
+  
+    @media only screen and (max-width: 480px) {
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+  
+  .directors {
+    padding: 10rem 4.9rem;
+    background-color:#044149;
+    background-image: url(/public/Imagez/bg-pattern-about-2-contact-1.svg),
+    url(/public/Imagez/bg-pattern-home-4-about-3.svg);
+  background-repeat: no-repeat;
+  background-position: left -100px top, right bottom;
+  }
+  
+  .directors h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .directors .director-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    @media only screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .clients {
+    padding: 50px 0;
+    background-color: #083a3f;
+    background-image: url(/public/Imagez/bg-pattern-about-4.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  
+  .clients h2 {
+    text-align: center;
+    font-size: 3.4rem;
+    margin-bottom: 40px;
+    color: white;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 2.1rem;
+      }
+  }
+  
+  .clients .client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between rows of logos */
+  
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;  /* Change to column layout */
+      gap: 20px;  /* Add gap between logos */
+    }
+  }
+  
+  .clients .client-logo {
+    margin: 0 20px; /* Increase spacing between logos */
+    height: 4rem;   /* Increase logo height */
+    width: 9rem;   /* Increase logo width */
+  }
+  
+  .clients .client-logo img {
+    width: 100%;
+  }
+  

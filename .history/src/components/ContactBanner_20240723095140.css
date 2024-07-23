@@ -1,0 +1,76 @@
+.banner {
+    background-color: #f08080;
+    height: 200px;
+    display: grid;
+    column-gap: 3rem;
+    align-items: center;
+    align-content: center;
+    background-image:url(/Imagez/bg-pattern-home-6-about-5.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  
+    @media only screen and (max-width: 768px) {
+      height: 302px;
+    }
+  }
+  
+  .banner__content {
+    grid-column: 2 / 10;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    grid-column: center-start / center-end;
+    column-gap: 3rem;
+  
+    @media only screen and (max-width: 768px) {
+      grid-template-rows: repeat(2, min-content);
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 2.4rem;
+      text-align: center;
+    }
+  }
+  
+  .banner__title {
+    color: #1b4332;
+    margin: 1rem;
+    grid-column:1 / 7;
+
+  
+    @media only screen and (max-width: 768px) {
+      grid-column: 2 / 9;
+    }
+  
+    @media only screen and (max-width: 480px) {
+      grid-column: 1 / 2;
+    }
+  }
+  
+  .banner__btn {
+    grid-column: 10 / -1;
+    background-color: green;
+    color: #ffffff;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding-left: 3.5rem;
+
+  
+    @media only screen and (max-width: 768px) {
+        grid-column: 9 / -1;
+      margin: auto;
+      padding: .5rem;
+    }
+  }
+
+  /* New styles for mobile layout */
+  @media only screen and (max-width: 480px) {
+    .banner__content {
+      grid-template-columns: auto; /* Remove explicit row heights */
+      text-align: center; /* Center align content on smaller screens */
+    }
+
+    .banner__title {
+      grid-column: 1 / -1; /* Span across all columns */
+      margin-bottom: 1rem; /* Add space between title and button */
+    }
+  }

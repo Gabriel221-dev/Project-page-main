@@ -1,0 +1,104 @@
+.sidebar {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar--open {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
+  
+  .sidebar__overlay {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar__content {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #194c4c;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 128px repeat(2, min-content);
+    grid-template-columns: 48px 1fr 25px;
+    transition: width 0.3s ease;
+    background-image: url(/public/Imagez/bg-pattern-about-1-mobile-nav-1.svg);
+    background-repeat: no-repeat;
+    background-position: right -100px bottom;
+    transition: width .4s ease;
+  }
+  
+  .sidebar__header {
+    grid-column: 2 / 3;
+    justify-self: end;
+    align-self: center;
+  }
+  
+  .sidebar__close {
+    /* background-color: red; */
+    width: 30px;
+    border: 0;
+    outline: 0;
+  }
+  
+  .sidebar__navigation {
+    grid-column: 2 / 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar__link {
+    margin-bottom: 2.4rem;
+  }
+  
+  .sidebar__anchor {
+    font-size: 1.8rem;
+    color: #fff;
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .sidebar__btn {
+    grid-column: 2 / 3;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 159px;
+  }
+  
+  .sidebar--open .sidebar__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidebar--open .sidebar__content {
+    width: 250px;
+  }
+  
+  @media (max-width: 580px) {
+    .header__menu {
+      display: grid;
+      background-color: transparent;
+      width: 24px;
+      border: 0;
+      outline: 0;
+      justify-self: end;
+      align-self: center;
+      margin-left: auto;
+    }
+  }
+  
