@@ -86,7 +86,7 @@
   }
   
   .build {
-    background-color: #102d29;
+    background-color: #1c2726;
     padding: 50px 0;
     display: flex;
     height: 100%;
@@ -123,8 +123,7 @@
   }
   
   .build__title {
-    font-size: 2.5rem;
-    font-style: normal;
+    font-size: 2.2rem;
     font-weight: 600;
     color: #fff;
     margin: 10px -24px;

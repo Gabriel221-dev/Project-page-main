@@ -1,4 +1,10 @@
 import "./About.css";
+import avatarNikita from "../Imagez/avatar-nikita.jpg";
+import avatarChristian from "../Imagez/avatar-christian.jpg";
+import avatarCruz from "../Imagez/avatar-cruz.jpg";
+import avatarDrake from "../Imagez/avatar-drake.jpg";
+import avatarGriffin from "../Imagez/avatar-griffin.jpg";
+import avatarAden from "../assets/avatar-aden.jpg";
 import DirectorCard from "../components/DirectorCard";
 import ContactBanner from "../components/ContactBanner";
 
@@ -14,7 +20,7 @@ const About = () => {
     },
     {
       id: 2,
-      image: "/Imagez/avatar-christian.jpg",
+      image: avatarChristian,
       person: "Cristian Duncan",
       position: "Co-founder & COO",
       quote:
@@ -22,7 +28,7 @@ const About = () => {
     },
     {
       id: 3,
-      image: "/Imagez/avatar-cruz.jpg",
+      image: avatarCruz,
       person: "Cruz Hamer",
       position: "Co-founder & CTO",
       quote:
@@ -30,7 +36,7 @@ const About = () => {
     },
     {
       id: 4,
-      image: "/Imagez/avatar-drake.jpg",
+      image: avatarDrake,
       person: "Drake Heaton",
       position: "Business Development Lead",
       quote:
@@ -38,7 +44,7 @@ const About = () => {
     },
     {
       id: 5,
-      image: "/Imagez/avatar-griffin.jpg",
+      image: avatarGriffin,
       person: "Griffin Wise",
       position: "Lead Marketing",
       quote:
@@ -46,7 +52,7 @@ const About = () => {
     },
     {
       id: 6,
-      image: "/assets/avatar-aden.jpg",
+      image: avatarAden,
       person: "Aden Allan",
       position: "Head of Talent",
       quote:
